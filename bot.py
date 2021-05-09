@@ -46,7 +46,7 @@ def fillForm(email, first, last):
     NextOne = web.find_element_by_xpath('//*[@id="NextButton"]')
     NextOne.click()
     time.sleep(2)
-    web.implicitly_wait(10)
+    web.implicitly_wait(10) 
 
     emailField = web.find_element_by_xpath('//*[@id="QR~QID22~1"]')
     emailField.send_keys(str(email))
